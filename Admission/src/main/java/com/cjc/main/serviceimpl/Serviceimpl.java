@@ -19,4 +19,17 @@ public class Serviceimpl implements Servicei
 		return ri.save(admission);
 	}
 
+	@Override
+	public Iterable<Admission> get() 
+	{
+		return ri.findAll();
+	}
+
+	@Override
+	public void delete(Integer sid) 
+	{
+		ri.deleteById(sid);
+		
+	}
+
 }

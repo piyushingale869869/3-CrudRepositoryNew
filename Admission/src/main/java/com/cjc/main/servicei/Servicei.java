@@ -6,4 +6,8 @@ public interface Servicei {
 
 	Admission save(Admission admission);
 
+	Iterable<Admission> get();
+
+	void delete(Integer sid);
+
 }
