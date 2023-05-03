@@ -10,4 +10,6 @@ public interface Servicei {
 
 	void delete(Integer sid);
 
+	Admission update(Admission admission, Integer sid);
+
 }
